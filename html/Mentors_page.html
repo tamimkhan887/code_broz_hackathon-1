@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Dashboard</title>
+    <link rel="stylesheet" href="/CSS/Mentors_page.css">
+    <link rel="icon" type="image/x-icon" href="/Images/site-logo.5f13dab7.svg">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Welcome To Mentor Dashboard</h1>
+
+    <div class="login-container">
+        <h2>Mentor Login</h2>
+        <form id="login-form" action="/submit_login" method="POST" onsubmit="handleLogin(event)">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" class="input-field" required><br>
+
+            <label for="password">Password</label><br>
+            <div class="password-container">
+                <input type="password" id="password" name="password" class="input-field" required><br>
+                <i id="toggle-password" class="fas fa-eye" onclick="togglePassword()"></i>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+
+    <!-- Mentor Dashboard -->
+    <div id="mentor-dashboard" style="display:none;">
+        <h2>Student Availability</h2>
+        <label for="student-name">Select Student:</label><br>
+        <select id="student-name" aria-label="Choose a student">
+            <option value="student1">Tamim Khan</option>
+            <option value="student2">Golam Azam</option>
+            <option value="student3">Jubayer</option>
+            <option value="student2">Abir</option>
+        </select>
+
+        <h2>Schedule New Session</h2>
+        <label for="session-date">Select Date:</label><br>
+        <input type="date" id="session-date" aria-label="Select session date">
+        <br>
+        <label for="session-time">Select Time:</label><br>
+        <input type="time" id="session-time" aria-label="Select session time">
+        <br>
+        <button id="schedule-session">Schedule Session</button>
+
+        <h2>Manage Sessions</h2>
+        <label for="sessions-list">Upcoming Sessions:</label><br>
+        <select id="sessions-list" aria-label="Select session">
+            <option value="session1">Web Development</option>
+            <option value="session2">Software Engineering</option>
+            <option value="session3">Machine Learning</option>
+            <option value="session4">Artificial Intelligence</option>
+
+        </select>
+        <br>
+        <button id="update-session">Update Session</button>
+        <button id="cancel-session">Cancel Session</button>
+    </div>
+
+<script src="/JS/mentors_page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Planner Dashboard</title>
+    <link rel="stylesheet" href="/CSS/Course_planner.css">
+    <link rel="icon" type="image/x-icon" href="/Images/site-logo.5f13dab7.svg">
+
+</head>
+
+<body>
+    <h1>Planner Dashboard</h1>
+
+    <div class="login-container">
+        <h2>Course Planner Login</h2>
+        <form id="login-form" action="/submit_login" method="POST" onsubmit="handleLogin(event)">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" class="input-field" required><br>
+
+            <label for="password">Password</label><br>
+            <div class="password-container">
+                <input type="password" id="password" name="password" class="input-field" required><br>
+                <i id="toggle-password" class="fas fa-eye" onclick="togglePassword()"></i>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+
+    <!-- Course Planner Dashboard -->
+    <div id="course-planner-dashboard" style="display:none;">
+        <h2>Create New Course</h2>
+        <label for="course-name">Course Name:</label><br>
+        <input type="text" id="course-name" aria-label="Enter course name">
+        <br>
+        <label for="course-mentor">Assign Mentor:</label><br>
+        <select id="course-mentor" aria-label="Assign mentor">
+            <option value="mentor1">Fakrul Islam</option>
+            <option value="mentor2">Ozifa Jannat</option>
+        </select>
+        <br>
+        <button id="create-course">Create Course</button>
+
+        <h2>Manage Existing Courses</h2>
+        <label for="existing-courses">Existing Courses:</label><br>
+        <select id="existing-courses">
+            <option value="course1">Web Development</option>
+            <option value="course2">Artificial Intelligence</option>
+            <option value="course3">Software Engineering</option>
+            <option value="course4">Machine Learning</option>
+
+        </select>
+        <br>
+        <button id="update-course">Update Course</button>
+        <button id="delete-course">Delete Course</button>
+    </div>
+
+<script src="/JS/Course_planner.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4eaff;
+    color: #4a148c;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #311b92;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+h1:hover {
+    color: #512da8;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #512da8;
+    margin-bottom: 10px;
+}
+
+/* Container Styling */
+div {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+div:hover {
+    transform: translateY(-5px);
+}
+
+/* Login Form */
+.login-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.login-container h2 {
+    color: #512da8;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], input[type="date"], select {
+    padding: 12px;
+    border: 2px solid #7e57c2;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #4a148c;
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #512da8;
+    box-shadow: 0 0 8px rgba(81, 45, 168, 0.3);
+    outline: none;
+}
+
+/* Button */
+button {
+    background: #673ab7;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #5e35b1;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(103, 58, 183, 0.3);
+}
+
+/* Password container styling */
+.password-container {
+    position: relative;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    cursor: pointer;
+    color: #7e57c2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        width: 95%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust the form */
+    .login-container {
+        padding: 20px;
+    }
+
+    /* Adjust button sizes for mobile */
+    button {
+        padding: 10px 14px;
+    }
+
+    /* Form fields */
+    input[type="text"], input[type="password"], input[type="date"], select {
+        padding: 10px;
+    }
+}
+
+/* Hidden content styling */
+#member-dashboard {
+    display: none;
+}
+
+
+
+
+

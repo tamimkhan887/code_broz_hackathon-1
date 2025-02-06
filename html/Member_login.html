@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Dashboard</title>
+    <link rel="stylesheet" href="/CSS/member_login.css">
+    <link rel="icon" type="image/x-icon" href="/Images/site-logo.5f13dab7.svg">
+
+    <!-- Include Font Awesome for Eye Icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Welcome to Your Dashboard</h1>
+
+    <div class="login-container">
+        <h2>Member Login</h2>
+        <form id="login-form" action="/submit_login" method="POST" onsubmit="handleLogin(event)">
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" class="input-field" aria-label="Enter your username" required><br>
+
+            <label for="password">Password</label><br>
+            <div class="password-container">
+                <input type="password" id="password" name="password" class="input-field" aria-label="Enter your password" required><br>
+                <i id="toggle-password" class="fas fa-eye" onclick="togglePassword()"></i>
+            </div>
+
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+
+    <!-- The rest of the page, initially hidden -->
+    <div id="member-dashboard" style="display:none;">
+        <h2>Mark Availability</h2>
+        <label for="availability-date">Select Date:</label><br>
+        <input type="date" id="availability-date" aria-label="Select availability date">
+        <h2>Enrolled Courses</h2>
+        <label for="courses-list">Select Your Course</label>
+        <select id="courses-list" aria-label="Choose a course">
+            <option value="Wd">Web Development</option>
+            <option value="SE">Software Engineering</option>
+        </select>
+        <br>
+        <button id="submit-session">Submit</button>
+        <br>
+        
+        <h2>Upcoming Sessions</h2>
+        <label for="sessions-list">Select Session:</label><br>
+        <select id="sessions-list" aria-label="Choose a session">
+            <option value="Ml">Machine Learning</option>
+            <option value="AI">Artificial Intelligence</option>
+        </select>
+        <br>
+        <button>Enroll Now</button>
+       
+    </div>
+    
+
+<script src="/JS/Member_login.js"></script>
+</body>
+
+</html>
+

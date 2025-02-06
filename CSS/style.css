@@ -1,0 +1,125 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav div img{
+    max-width: 20rem;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f5fa; /* Light violet background */
+    color: #4b3f72; /* Darker violet text */
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #e3d8f9; /* Light violet for the header */
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+h1, h6 {
+    font-family: 'Arial', sans-serif;
+    color: #6b4f91; /* Slightly darker violet */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.8rem; /* Slightly bigger font size for better impact */
+}
+
+h6 {
+    font-size: 1.2rem;
+    color: #9a7dbd; /* Light violet color for smaller text */
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav button {
+    background-color: #d6b0e8; /* Soft violet for buttons */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #c18dce; /* Darker violet on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.2rem;
+    color: #6b4f91;
+    margin-bottom: 20px;
+}
+
+main img {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for images */
+}
+
+main div {
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+main div button {
+    background-color: #d6b0e8;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+main div button:hover {
+    background-color: #c18dce;
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+footer {
+    background-color: #6b4f91;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow at the footer */
+}
+
+footer small {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
